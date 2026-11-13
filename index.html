@@ -1,1 +1,116 @@
-index.html
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Jamshid Mardonov, Python backend developer and Information Security undergraduate in Fergana, Uzbekistan.">
+  <title>Jamshid Mardonov | Python Backend Developer</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #18334d;
+      --muted: #455970;
+      --paper: #fbfcfe;
+      --line: #cbd5df;
+      --surface: #edf3f9;
+      font: 100%/1.6 "Inter", system-ui, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; color: var(--ink); background: var(--paper); }
+    .wrap { width: min(66rem, calc(100% - 2.5rem)); margin-inline: auto; }
+    a { color: inherit; text-underline-offset: .22em; }
+    a:focus-visible { outline: 3px solid #326ca8; outline-offset: 4px; }
+    nav, .actions, .links { display: flex; flex-wrap: wrap; gap: .8rem 1.35rem; align-items: center; }
+    header { border-bottom: 1px solid var(--line); }
+    nav { justify-content: space-between; padding-block: 1rem; }
+    nav > a { font-weight: 700; text-decoration: none; }
+    .hero { padding-block: clamp(2.8rem, 9vw, 6rem); }
+    .location, p { color: var(--muted); }
+    h1, h2, h3, p { margin: 0; }
+    h1 { font-size: clamp(2.25rem, 7vw, 5rem); letter-spacing: -.055em; line-height: 1.04; margin-block: .45rem .8rem; }
+    h2 { font-size: clamp(1.65rem, 4vw, 2.4rem); letter-spacing: -.035em; margin-bottom: 1rem; }
+    h3 { font-size: 1.15rem; line-height: 1.35; }
+    p + p, h3 + p { margin-top: .6rem; }
+    .role { font-size: clamp(1.1rem, 3vw, 1.45rem); font-weight: 650; color: var(--ink); }
+    .intro { max-width: 60ch; }
+    .actions { margin-top: 1.5rem; gap: .65rem; }
+    .button { border: 1px solid var(--ink); border-radius: .45rem; padding: .62rem .95rem; text-decoration: none; font-weight: 650; }
+    .primary { background: var(--ink); color: white; }
+    .button:hover { box-shadow: 0 0 0 2px #a6bdd3; }
+    section { padding-block: 2rem; border-top: 1px solid var(--line); }
+    .cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+    article { background: var(--surface); border: 1px solid var(--line); border-radius: .7rem; padding: 1.25rem; }
+    .detail { font-size: .9rem; }
+    footer { padding-block: 2rem; border-top: 1px solid var(--line); overflow-wrap: anywhere; }
+    @media (max-width: 42rem) { .cards { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="wrap" aria-label="Main navigation">
+      <a href="#top">Jamshid Mardonov</a>
+      <div class="links">
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+  <main id="top" class="wrap">
+    <div class="hero">
+      <p class="location">Fergana, Uzbekistan</p>
+      <h1>Jamshid Mardonov</h1>
+      <p class="role">Python Backend Developer &amp; Information Security Student</p>
+      <p class="intro">I work with Python, Django, Django REST Framework, and PostgreSQL. My undergraduate thesis explores how hands-on examples can help students learn secure web development.</p>
+      <!-- Keep both PDFs next to this file in the GitHub Pages publishing folder. -->
+      <div class="actions">
+        <a class="button primary" href="./Jamshid_Mardonov_Tech_Resume.pdf" download>Download Tech Resume (PDF)</a>
+        <a class="button" href="./Jamshid_Mardonov_Academic_CV.pdf" download>Download Academic CV (PDF)</a>
+      </div>
+    </div>
+    <section id="projects" aria-labelledby="projects-title">
+      <h2 id="projects-title">Projects &amp; Practice</h2>
+      <div class="cards">
+        <article>
+          <h3>OWASP Top 10 Learning Platform</h3>
+          <p class="detail">Undergraduate thesis · In progress</p>
+          <p>A sandboxed learning platform that uses paired backend examples to teach common web vulnerabilities and their mitigations.</p>
+          <p class="detail">Python, Django, PostgreSQL, HTML/CSS, Docker</p>
+        </article>
+        <article>
+          <h3>Algorithmic Problem Solving</h3>
+          <p>Solved approximately 100 LeetCode problems covering algorithms, data structures, and time and space complexity.</p>
+          <p><a href="https://leetcode.com/u/JamshidMardonov">View LeetCode profile</a></p>
+        </article>
+      </div>
+    </section>
+    <section id="education" aria-labelledby="education-title">
+      <h2 id="education-title">Education &amp; Experience</h2>
+      <div class="cards">
+        <article>
+          <h3>Fergana State Technical University</h3>
+          <p>B.Sc. in Information Security · Expected June 2027</p>
+          <p>Annual GPA of 4.30/5.00 for 2025–2026.</p>
+          <p>Completed Python Backend Development training at Najot Ta’lim.</p>
+        </article>
+        <article>
+          <h3>MirGroup</h3>
+          <p>Backend Developer Intern / Mentee · 2026–Present</p>
+          <p>Collaborate on backend modules and participate in code reviews and architecture discussions under senior engineering mentorship.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+  <footer id="contact">
+    <div class="wrap">
+      <h2>Contact</h2>
+      <div class="links">
+        <a href="mailto:its.mardonov@gmail.com">its.mardonov@gmail.com</a>
+        <a href="https://github.com/Jamshidbek-00">GitHub</a>
+        <a href="https://linkedin.com/in/jamshid-mardonov-47b593370">LinkedIn</a>
+        <a href="https://t.me/JamshidMardonov">Telegram</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
